@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0a0a1a] text-white;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(15, 15, 30, 0.5);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), 
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  }
+  
+  .gradient-button {
+    background: linear-gradient(135deg, #7E47FF 0%, #4A10D0 100%);
+    box-shadow: 0 4px 15px rgba(126, 71, 255, 0.4);
+  }
+  
+  .gradient-button:hover {
+    box-shadow: 0 6px 20px rgba(126, 71, 255, 0.6);
+    transform: translateY(-1px);
+  }
+  
+  .gradient-button:active {
+    transform: translateY(0);
+  }
+}
+

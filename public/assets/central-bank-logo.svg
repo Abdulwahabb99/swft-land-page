@@ -1,0 +1,7 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="5" y="5" width="30" height="30" rx="2" fill="#1E3A8A" stroke="#3B82F6" stroke-width="1"/>
+  <path d="M20 10 L15 20 L20 20 L25 20 L20 10 Z" fill="#FBBF24"/>
+  <text x="45" y="15" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#3B82F6">CENTRAL BANK</text>
+  <text x="45" y="28" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#3B82F6">OF EGYPT</text>
+</svg>
+
