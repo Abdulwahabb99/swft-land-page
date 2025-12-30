@@ -7,9 +7,9 @@ export const assets = {
   shortLogo: "/assets/logoShort.svg",
 
   // Partner logos (Powered by section)
-  banqueMisr: "/assets/banque-misr-logo.svg",
-  centralBank: "/assets/central-bank-logo.svg",
-  banknbox: "/assets/banknbox-logo.svg",
+  banqueMisr: "/assets/Banque_Misr.png",
+  centralBank: "/assets/centeral bank.png",
+  banknbox: "/assets/banknbox.png",
 
   // Background elements (if needed)
   heroBlob: "/assets/hero-blob.svg",

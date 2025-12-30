@@ -1,30 +1,30 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { assets } from '../data/assets'
+import { useState } from "react";
+import { assets } from "../data/assets";
 
 export default function Hero() {
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission
-    console.log('Email submitted:', email)
-  }
+    console.log("Email submitted:", email);
+  };
 
   return (
-    <section className="relative z-10 px-8 md:px-12 lg:px-16 py-8 md:py-12 lg:py-16">
+    <section className="relative z-10 px-8 md:px-12 lg:px-16 py-8 md:py-12 lg:py-1">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-2xl">
           {/* Glassmorphism Card */}
-          <div className="glass-card rounded-[2rem] p-10 md:p-14 lg:p-16">
+          <div className="glass-card rounded-[70px] p-10 md:p-14 lg:p-16">
             {/* Headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10 md:mb-12 leading-[1.1]">
               Your Cashflow,
               <br />
               Optimized
             </h1>
-            
+
             {/* Email Input and CTA */}
             <form onSubmit={handleSubmit} className="mb-10 md:mb-12">
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -45,43 +45,41 @@ export default function Hero() {
                 </button>
               </div>
             </form>
-            
+
             {/* Powered by Section */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 md:gap-6">
-              <p className="text-white/70 text-sm font-medium whitespace-nowrap">
-                Powered by
-              </p>
-              <div className="flex items-center gap-5 sm:gap-6 md:gap-8 flex-wrap">
+            <div className="mt-8 pt-8">
+              <p className="text-white text-sm font-medium mb-4">Powered by</p>
+              <div className="flex items-center gap-4 md:gap-6 flex-nowrap">
                 {/* Banque Misr Logo */}
                 <div className="flex items-center">
                   <img
                     src={assets.banqueMisr}
                     alt="Banque Misr"
-                    width={120}
-                    height={40}
-                    className="h-8 w-auto object-contain opacity-90"
+                    width={100}
+                    height={50}
+                    className="object-contain"
                   />
                 </div>
-                
+
                 {/* Central Bank of Egypt Logo */}
                 <div className="flex items-center">
                   <img
                     src={assets.centralBank}
                     alt="Central Bank of Egypt"
-                    width={120}
-                    height={40}
-                    className="h-8 w-auto object-contain opacity-90"
+                    width={140}
+                    height={50}
+                    className="object-contain"
                   />
                 </div>
-                
+
                 {/* banknbox Logo */}
                 <div className="flex items-center">
                   <img
                     src={assets.banknbox}
                     alt="banknbox"
-                    width={120}
-                    height={40}
-                    className="h-8 w-auto object-contain opacity-90"
+                    width={110}
+                    height={50}
+                    className="object-contain"
                   />
                 </div>
               </div>
@@ -90,6 +88,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
