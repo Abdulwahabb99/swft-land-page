@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Main Swft Icon on the right - decorative background element */}
       <div className="fixed inset-0 pointer-events-none z-[1]">
-        <div className="absolute right-[10%] top-1/3 -translate-y-1/2 w-[600px] h-[600px] opacity-100">
+        <div className="absolute right-[10%] top-1/4 -translate-y-1/2 w-[600px] h-[600px] opacity-100">
           <MainSwftIconSVG width="1000" height="1000" />
         </div>
         {/* Additional blurred version for depth */}

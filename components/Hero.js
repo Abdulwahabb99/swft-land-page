@@ -13,7 +13,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative z-10 px-8 md:px-12 lg:px-16 py-8 md:py-12 lg:py-1">
+    <section className="relative z-10 px-8 md:px-12 lg:px-16 py-8 md:py-12 lg:py-0">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-2xl">
           {/* Glassmorphism Card */}
@@ -27,19 +27,35 @@ export default function Hero() {
 
             {/* Email Input and CTA */}
             <form onSubmit={handleSubmit} className="mb-10 md:mb-12">
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex flex-col sm:flex-row gap-2 items-stretch sm:items-center w-full sm:w-[400px]">
                 <input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full sm:w-[264px] h-[56px] rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500/50 shadow-sm text-base px-4"
-                  style={{ opacity: 1 }}
+                  className="w-full sm:flex-1 flex items-center rounded-lg text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+                  style={{
+                    padding: '10px 65px 10px 10px',
+                    borderRadius: '8px',
+                    border: '1px solid #EAEAED',
+                    background: '#FCFCFF',
+                    boxSizing: 'border-box',
+                    height: '56px',
+                    opacity: 1
+                  }}
                   required
                 />
                 <button
                   type="submit"
-                  className="gradient-button px-7 sm:px-8 py-3.5 sm:py-4 rounded-xl text-white font-semibold text-base transition-all duration-200 whitespace-nowrap"
+                  className="w-full sm:w-[132px] flex justify-center items-center rounded-lg text-white font-semibold text-base whitespace-nowrap sm:flex-shrink-0 transition-all duration-200"
+                  style={{
+                    height: '56px',
+                    padding: '10px 18px',
+                    borderRadius: '8px',
+                    gap: '8px',
+                    background: 'linear-gradient(110deg, #7E47FF 0%, #4A10D0 100%)',
+                    boxShadow: '0 1px 2px 0 rgba(16, 24, 40, 0.05)'
+                  }}
                 >
                   Join waitlist
                 </button>
