@@ -11,6 +11,6 @@ export const assets = {
   centralBank: "/assets/centeral bank.png",
   banknbox: "/assets/banknbox.png",
 
-  // Background elements (if needed)
+  // Background elements (if needed)ss
   heroBlob: "/assets/hero-blob.svg",
 };
